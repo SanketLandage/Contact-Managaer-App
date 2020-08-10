@@ -43,6 +43,7 @@ router.post('/', [
 
           await user.save();
           
+          ////JWT Token
           const payload = {
               user : {
                   id : user.id
