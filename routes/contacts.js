@@ -101,7 +101,7 @@ async (req,res)=>{
 
 router.delete('/:id', auth , async (req,res)=>{
     try {
-        let contact = await Contact.findById(req.params.id);
+        let contact = await Contact.findByIdAndRemove(req.params.id);
 
         if(!contact) return res.status(400).json({ msg : 'Contact Not Found'});
 

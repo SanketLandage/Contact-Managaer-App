@@ -94,7 +94,7 @@ import ContactContext from '../../context/contact/contactContext';
             </div>
             {current && 
                 <div>
-                    <button className="btn btn-light btn-block" onClick={clearAll}>Clear</button>
+                    <button className="btn btn-light btn-outline-dark btn-block" onClick={clearAll}>Clear</button>
                 </div>
             }
         </form>

@@ -45,9 +45,9 @@ const Login = (props) => {
     }
 
     return (
-        <div className="container">
+        <div className="container mt-3 pad2">
          <div className="row">
-            <div className="col-12 col-sm-8">
+            <div className="col-12 col-sm-6 offset-sm-3">
                 <div className="align-content-center">
                     <h1 className="text-center">Account <span className="text-primary">Login</span>{' '} <span className="fa fa-login fa-lg"></span></h1>
                 
@@ -55,14 +55,14 @@ const Login = (props) => {
                         
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
-                            <input className="form-control" type="email" name="email" value={email} onChange={onChange} required/>
+                            <input className="form-control" type="email" name="email" value={email} onChange={onChange} required placeholder="Name"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="password">Password</label>
-                            <input className="form-control" type="password" name="password" value={password} onChange={onChange} required/>
+                            <input className="form-control" type="password" name="password" value={password} onChange={onChange} required placeholder="Password"/>
                         </div>
                         
-                        <input type="submit" className="form-control btn btn-block btn-primary btn-outline-dark" value="Login"/>
+                        <input type="submit" className="form-control btn btn-block btn-light btn-outline-dark" value="Login"/>
                     </form>
                 </div>
             </div>

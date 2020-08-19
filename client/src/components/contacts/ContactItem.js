@@ -7,13 +7,14 @@ import ContactContext from '../../context/contact/contactContext';
     const contactContext = useContext(ContactContext);
     const { deleteContact ,setCurrent , clearCurrent } = contactContext;
 
-     const { id ,name , email , type , phone} = contact;
+     const { _id ,name , email , type , phone} = contact;
 
 
      const onDelete = e =>{
-         deleteContact(id);
+         deleteContact(_id);
          clearCurrent();
      }
+
     return (
         <div>
         <div className="card shadow-sm p-2 mb-2 bg-white rounded" >
